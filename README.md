@@ -14,3 +14,8 @@ This is an executable .jar file that only takes filenames to convert as argument
 java -jar /path/to/alma.tar.gz-to-marcinxml /path/to/alma/*.tar.gz
 
 ```
+
+## Performance
+
+It's not ridiculously fast (e.g., it doesn't use Jackson custom serializers like it should and isn't even multi-threaded), 
+but it'll convert the University of Michigan's full export of some 14.5M records on my laptop in about 15mn. 
